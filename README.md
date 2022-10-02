@@ -1,9 +1,9 @@
 # Fakerphp Picsum Images
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/smknstd/fakerphp-picsum-images.svg?style=flat-square)](https://packagist.org/packages/smknstd/fakerphp-picsum-images)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/smknstd/fakerphp-picsum-images/Tests?label=tests)](https://github.com/smknstd/fakerphp-picsum-images/actions?query=workflow%3ATests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/smknstd/fakerphp-picsum-images/Check%20&%20fix%20styling?label=code%20style)](https://github.com/smknstd/fakerphp-picsum-images/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/smknstd/fakerphp-picsum-images.svg?style=flat-square)](https://packagist.org/packages/smknstd/fakerphp-picsum-images)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/adminui/fakerphp-picsum-images.svg?style=flat-square)](https://packagist.org/packages/adminui/fakerphp-picsum-images)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/adminui/fakerphp-picsum-images/Tests?label=tests)](https://github.com/adminui/fakerphp-picsum-images/actions?query=workflow%3ATests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/adminui/fakerphp-picsum-images/Check%20&%20fix%20styling?label=code%20style)](https://github.com/adminui/fakerphp-picsum-images/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/adminui/fakerphp-picsum-images.svg?style=flat-square)](https://packagist.org/packages/adminui/fakerphp-picsum-images)
 
 ## Introduction
 
@@ -20,14 +20,14 @@ _This package has been forked from [mmo/faker-images](https://github.com/morawsk
 You can install the package via composer in dev dependency section:
 
 ```bash
-composer require --dev smknstd/fakerphp-picsum-images
+composer require --dev adminui/fakerphp-picsum-images
 ```
 
 ## Usage
 
 ```php
 $faker = \Faker\Factory::create();
-$faker->addProvider(new \Smknstd\FakerPicsumImages\FakerPicsumImagesProvider($faker));
+$faker->addProvider(new \AdminUI\FakerPicsumImages\FakerPicsumImagesProvider($faker));
 
 // return a string that contains a url like 'https://picsum.photos/800/600/'
 $faker->imageUrl($width = 800, $height = 600); 
@@ -40,20 +40,6 @@ Also, there are some more options :
 - alternative webp format
 - effects (grayscale, blurry)
 - returning a specific photo based on an id instead of a random one (ex: https://picsum.photos/id/1/800/600)
-
-## Testing
-
-```bash
-composer test
-```
-
-## Contributing
-
-Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
-
-## Security Vulnerabilities
-
-Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
 
 ## Credits
 
